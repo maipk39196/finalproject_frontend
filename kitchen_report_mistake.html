@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kitchen report mistake</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="kitchen_styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="kitchen_main.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kitchen_stock_main.html">Stock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kitchen_report.html">Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kitchen_recipes_apptizer.html">Recipes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Stock Table Section -->
+    <div class="container my-5">
+        <button class="stock-btn"><a href="kitchen_report.html">TOTAL ALL</a></button>
+        <button class="stock-btn active"><a href="kitchen_report_mistake.html">MISTAKE</a></button>
+        <button class="stock-btn"><a href="kitchen_bestseller.html">BEST SELLER</a></button>
+        <div class="form-group">
+            <div class="row mb-3 align-items-center">
+                <div class="col-md-4">
+                    <h3 class="datePicker mb-0" for="startDate">ตั้งแต่วันที่:</h3>
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" id="startDate">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h3 class="datePicker mb-0" for="endDate">ถึงวันที่:</h3>
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" id="endDate">
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Chart Section -->
+    <div class="container my-5">
+        <canvas id="salesChart" width="400" height="600"></canvas>
+    </div>
+
+    <div class="container my-5">
+        <table class="table table-striped" id="reportTable">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">เมนู</th>
+                    <th scope="col">โต๊ะ</th>
+                    <th scope="col">เพิ่มเติม</th>
+                    <th scope="col">ราคา</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>เกี๊ยวซ่า</td>
+                    <td>4</td>
+                    <td>-</td>
+                    <td>59</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>หนวดหมึกชุบแป้งทอด</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>89</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="totalText">รวมทั้งหมด:</th>
+                    <th id="totalPrice">0</th>
+                </tr>
+            </tfoot>
+        </table>     
+    </div>   
+
+    <!-- ปุ่มเลื่อนกลับไปที่กราฟ -->
+    <div class="container text-center my-5">
+        <button class="btn btn-primary" id="scrollToChart">กลับไปที่กราฟ</button>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js DataLabels plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <!-- Custom JavaScript -->
+    <script src="kitchen-script.js"></script> <!-- แยกไฟล์ chart -->
+</body>
+</html>

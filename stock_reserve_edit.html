@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit stock reserve</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="kitchen_styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="kitchen_main.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kitchen_stock_main.html">Stock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kitchen_report.html">Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kitchen_recipes_apptizer.html">Recipes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Edit Section -->
+    <div class="container container-edit">
+        <p class="edit-text">เพิ่ม ปีกไก่ ใน Stock สำรอง</p>
+        <p class="edit-text-form">จำนวน</p>
+        <input type="number" class="form-control" id="quantity5" min="1" value="1">
+        <p class="edit-text-form">กรัม</p>
+        <button class="edit-confirm"><a href="kitchen_stock_reserve.html">ยืนยัน</a></button>
+        <button class="edit-cancel"><a href="kitchen_stock_reserve.html">ยกเลิก</a></button>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

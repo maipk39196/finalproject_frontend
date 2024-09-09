@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Apptizer</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html">
+                <img src="imgs/logo.png" alt="ร้านอาหารแสนอร่อย" style="height: 40px; padding-right: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="apptizer.html">อาหารเรียกน้ำย่อย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">อาหารจานหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dessert.html">ของหวาน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="beverage.html">เครื่องดื่ม</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="ค้นหา" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">ค้นหา</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Menu Section -->
+    <div class="container my-5" style="padding-bottom: 30px;">
+        <h2 class="mb-4">อาหารเรียกน้ำย่อย</h2>
+        <div class="row">
+            <div class="col-md-4" style="padding-bottom: 30px;">
+                <div class="card">
+                    <img src="imgs/apptizer/ปีกไก่ทอดเกาหลี.png" class="card-img-top" alt="Food Item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">ไก่ทอดซอสเกาหลี</h5>
+                        <p class="card-text">69 บาท</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="quantity1" class="form-label">จำนวน</label>
+                                <input type="number" class="form-control" id="quantity1" min="1" value="1">
+                            </div>
+                            <!-- Dropdown for additional options -->
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    เพิ่มเติม
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="option1">
+                                            <label class="form-check-label" for="option1">พิเศษ</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <label for="notes1" class="form-label">หมายเหตุ</label>
+                                <textarea class="form-control" id="notes1" rows="1"></textarea>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="padding-bottom: 30px;">
+                <div class="card">
+                    <img src="imgs/apptizer/ปีกไก่บาบีคิว.png" class="card-img-top" alt="Food Item 2">
+                    <div class="card-body">
+                        <h5 class="card-title">ปีกไก่บาบีคิว</h5>
+                        <p class="card-text">69 บาท</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="quantity2" class="form-label">จำนวน</label>
+                                <input type="number" class="form-control" id="quantity2" min="1" value="1">
+                            </div>
+                            <!-- Dropdown for additional options -->
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    เพิ่มเติม
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="option1">
+                                            <label class="form-check-label" for="option1">พิเศษ</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <label for="notes2" class="form-label">หมายเหตุ</label>
+                                <textarea class="form-control" id="notes2" rows="1"></textarea>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="padding-bottom: 30px;">
+                <div class="card">
+                    <img src="imgs/apptizer/เกี๊ยวซ่า.png" class="card-img-top" alt="Food Item 3">
+                    <div class="card-body">
+                        <h5 class="card-title">เกี๊ยวซ่า</h5>
+                        <p class="card-text">59 บาท</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="quantity3" class="form-label">จำนวน</label>
+                                <input type="number" class="form-control" id="quantity3" min="1" value="1">
+                            </div>
+                            <!-- Dropdown for additional options -->
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    เพิ่มเติม
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="option1">
+                                            <label class="form-check-label" for="option1">พิเศษ</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <label for="notes3" class="form-label">หมายเหตุ</label>
+                                <textarea class="form-control" id="notes3" rows="1"></textarea>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="padding-bottom: 30px;">
+                <div class="card">
+                    <img src="imgs/apptizer/กุ้งชุบแป้งทอด.png" class="card-img-top" alt="Food Item 4">
+                    <div class="card-body">
+                        <h5 class="card-title">กุ้งชุบแป้งทอด</h5>
+                        <p class="card-text">99 บาท</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="quantity4" class="form-label">จำนวน</label>
+                                <input type="number" class="form-control" id="quantity4" min="1" value="1">
+                            </div>
+                            <!-- Dropdown for additional options -->
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    เพิ่มเติม
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="option1">
+                                            <label class="form-check-label" for="option1">พิเศษ</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <label for="notes4" class="form-label">หมายเหตุ</label>
+                                <textarea class="form-control" id="notes4" rows="1"></textarea>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="padding-bottom: 30px;">
+                <div class="card">
+                    <img src="imgs/apptizer/หนวดหมึกชุบแป้งทอด.png" class="card-img-top" alt="Food Item 5">
+                    <div class="card-body">
+                        <h5 class="card-title">หนวดหมึกชุบแป้งทอด</h5>
+                        <p class="card-text">89 บาท</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="quantity5" class="form-label">จำนวน</label>
+                                <input type="number" class="form-control" id="quantity5" min="1" value="1">
+                            </div>
+                            <!-- Dropdown for additional options -->
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    เพิ่มเติม
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="option1">
+                                            <label class="form-check-label" for="option1">พิเศษ</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <label for="notes5" class="form-label">หมายเหตุ</label>
+                                <textarea class="form-control" id="notes5" rows="1"></textarea>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="container my-5">
+        <h2 class="mb-4">ตะกร้า</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div>
+                    <h5 class="mb-1">ไก่ทอดซอสเกาหลี</h5>
+                    <p class="mb-1">จำนวน : 1</p>
+                    <p class="mb-1">เพิ่มเติม : -</p>
+                    <p class="mb-1">หมายเหตุ : -</p>
+                </div>
+                <div class="d-flex flex-column align-items-end">
+                    <span class="badge bg-primary rounded-pill mb-2">69 บาท</span>
+                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div>
+                    <h5 class="mb-1">หนวดหมึกชุบแป้งทอด</h5>
+                    <p class="mb-1">จำนวน : 1</p>
+                    <p class="mb-1">เพิ่มเติม : -</p>
+                    <p class="mb-1">หมายเหตุ : -</p>
+                </div>
+                <div class="d-flex flex-column align-items-end">
+                    <span class="badge bg-primary rounded-pill mb-2">89 บาท</span>
+                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                </div>
+            </li>
+        </ul>
+        <div class="mt-4">
+            <h4>ยอดสุทธิ : 158 บาท</h4>
+        </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="container my-5">
+        <h2 class="mb-4">โต๊ะ</h2>
+        <form>
+            <div class="mb-3">
+                <select class="form-select" id="table" required>
+                    <option value="" disabled selected>เลือกโต๊ะ</option>
+                    <option value="1">โต๊ะ 1</option>
+                    <option value="2">โต๊ะ 2</option>
+                    <option value="3">โต๊ะ 3</option>
+                    <option value="4">โต๊ะ 4</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="container my-5">
+        <button type="submit" class="btn btn-primary">Place Order</button>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
